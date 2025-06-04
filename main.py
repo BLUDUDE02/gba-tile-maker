@@ -298,7 +298,7 @@ class GbaTileEditor(tk.Tk):
             gba_color_1 = self.rgb_to_gba(r, g, b)
                 
             # First color is transparent
-            f.write("    0x%04X, // Transparent\ n" % gba_color_1)
+            f.write("    0x%04X, // Transparent\n" % gba_color_1)
             
             # Remaining colors
             for i, color in enumerate(self.palette_pane.palette[1:], 1):
